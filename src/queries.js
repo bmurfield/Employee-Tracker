@@ -20,8 +20,8 @@ const Queries = {
   getAllEmployees: async () => {
     const query = `
       SELECT employee.id, employee.first_name, employee.last_name, role.title AS role, 
-             department.name AS department, role.salary, 
-             CONCAT(manager.first_name, ' ', manager.last_name) AS manager
+      department.name AS department, role.salary, 
+      CONCAT(manager.first_name, ' ', manager.last_name) AS manager
       FROM employee
       JOIN role ON employee.role_id = role.id
       JOIN department ON role.department_id = department.id
@@ -61,7 +61,7 @@ const Queries = {
     );
   },
 
-  // Get employees by department (optional feature)
+  // Get employees by department
   getEmployeesByDepartment: async (departmentId) => {
     const query = `
       SELECT employee.id, employee.first_name, employee.last_name, role.title AS role, department.name AS department
@@ -73,11 +73,11 @@ const Queries = {
     return db.query(query, [departmentId]);
   },
 
-  // Get employees by manager (optional feature)
+  // Get employees by manager
   getEmployeesByManager: async (managerId) => {
     const query = `
       SELECT employee.id, employee.first_name, employee.last_name, role.title AS role, 
-             department.name AS department, role.salary
+      department.name AS department, role.salary
       FROM employee
       JOIN role ON employee.role_id = role.id
       JOIN department ON role.department_id = department.id

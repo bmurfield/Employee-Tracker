@@ -1,6 +1,8 @@
-const inquirer = require('inquirer');
-const Queries = require('./queries'); // Adjust the path if necessary
+// Import files for app 
+const inquirer = require('inquirer'); 
+const Queries = require('./queries'); 
 
+// Array of prompts for user to select from
 const startApp = async () => {
   try {
     const { action } = await inquirer.prompt({
@@ -25,7 +27,7 @@ const startApp = async () => {
         'Exit',
       ],
     });
-
+// Switch case that handles prompt selections
     switch (action) {
       case 'View all departments':
         const departments = await Queries.getAllDepartments();

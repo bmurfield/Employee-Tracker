@@ -1,5 +1,5 @@
 require('dotenv').config();  // Load environment variables from .env file
-const { Pool } = require('pg');  // Use require instead of import for pg
+const { Pool } = require('pg');  // Importing PG
 
 
 // Create a new pool instance

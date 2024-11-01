@@ -3,13 +3,13 @@ CREATE DATABASE employee_db;
 
 \c employee_db
 
--- Create the department table
+-- Creates the department table
 CREATE TABLE department (
     id SERIAL PRIMARY KEY,
     name VARCHAR(30) UNIQUE NOT NULL
 );
 
--- Create the role table with a reference to the department table
+-- Creates the role table with a reference to the department table
 CREATE TABLE role (
     id SERIAL PRIMARY KEY,
     title VARCHAR(30) UNIQUE NOT NULL,
@@ -18,7 +18,7 @@ CREATE TABLE role (
     FOREIGN KEY (department_id) REFERENCES department(id) ON DELETE SET NULL
 );
 
--- Create the employee table with references to the role table and self-referencing manager_id
+-- Creates the employee table with references to the role table and self-referencing manager_id
 CREATE TABLE employee (
     id SERIAL PRIMARY KEY,
     first_name VARCHAR(30) NOT NULL,

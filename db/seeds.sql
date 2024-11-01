@@ -1,11 +1,11 @@
--- Insert sample data into department table
+-- Inserts department data into department table
 INSERT INTO department (name) VALUES 
 ('Sales'),
 ('Engineering'),
 ('Finance'),
 ('Human Resources');
 
--- Insert sample data into role table
+-- Inserts role data into role table
 INSERT INTO role (title, salary, department_id) VALUES 
 ('Salesperson', 50000, 1),
 ('Engineer', 75000, 2),
@@ -16,7 +16,7 @@ INSERT INTO role (title, salary, department_id) VALUES
 ('Senior Engineer', 90000, 2),
 ('Finance Manager', 85000, 3);
 
--- Insert sample data into employee table with NBA player names
+-- Inserts employee data into employee table with popular NBA player names
 INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES 
 ('LeBron', 'James', 5, NULL),
 ('Stephen', 'Curry', 7, NULL),
