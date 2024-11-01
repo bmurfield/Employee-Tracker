@@ -20,7 +20,7 @@ Developers frequently have to create interfaces that allow non-developers to eas
 
 ## Installation
 
-Files can be cloned from my github repository. Run 'npm i' to install the decessary Node apps to make the tracker work. Then log into PostgreSQL with 'psql -U postgres'. Then enter your password. This can be altered in the .env file. Mine is provided there for ease of use. Next run the schema.sql file to create the database. This is done with '\i/db/schema.sql'. To add employees to the table run the seeds.sql file with '\i/db/seeds.sql'. Lastly to run the inquirer node app exit out of PostgreSQL with '\q' and type 'node src/app.js'. 
+Files can be cloned from my github repository. Run 'npm i' to install the decessary Node apps to make the tracker work. Then log into PostgreSQL with 'psql -U postgres'. Then enter your password. This can be altered in the .env file. Mine is provided there for ease of use. Next run the schema.sql file to create the database. This is done with '\i /db/schema.sql'. To add employees to the table run the seeds.sql file with '\i /db/seeds.sql'. Lastly to run the inquirer node app exit out of PostgreSQL with '\q' and type 'node src/app.js'. 
 
 ## Usage
 
@@ -40,7 +40,7 @@ MIT License is listed in LICENSE file
 ## Examples
 
 Here is a link to a video of the application in action:
-
+https://drive.google.com/file/d/1QSP--g46zwBK4WHn6F_H1Tck3aKoFhvK/view?usp=sharing
 
 ## How to Contribute
 
